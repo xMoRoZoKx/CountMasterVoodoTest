@@ -3,7 +3,12 @@ guid: 86f877ae53dd8f54f86dd9b44ecbf63c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Soldier_Model_soldier_eye_mat
+    second: {fileID: 2100000, guid: 11d3fc47546917e41991710f190c2bab, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
