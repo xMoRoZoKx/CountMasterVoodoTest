@@ -236,7 +236,7 @@ public class CharacterController3Lane : MonoBehaviour
         {
             if (hit.CompareTag("Enemy"))
             {
-                WoodPartView enemy = hit.GetComponent<WoodPartView>();
+                var enemy = hit.GetComponent<EntityView>();
                 if (enemy != null)
                 {
                     enemy.Die(); // мгновенная смерть

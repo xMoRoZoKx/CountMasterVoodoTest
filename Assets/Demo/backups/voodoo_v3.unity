@@ -1621,10 +1621,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 8376074566871246905, guid: 5e64ecd9b46c5f346a311cd1631d8e53,
     type: 3}
+  bossPrefab: {fileID: 4051262596183673926, guid: 9200e01821220394faee09f8ca10660c,
+    type: 3}
   spawnPoint: {fileID: 1247503670}
   minSpawnInterval: 5
   maxSpawnInterval: 7
   spawnRangeX: 4.4
+  spawnBossEach: 3
   maxLives: 99
   lifeText: {fileID: 328408157}
   hitEffect: {fileID: 0}
@@ -7705,79 +7708,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 570659387}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &575693879
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4037596411263007239, guid: 5e64ecd9b46c5f346a311cd1631d8e53,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1183.9178
-      objectReference: {fileID: 0}
-    - target: {fileID: 4037596411263007239, guid: 5e64ecd9b46c5f346a311cd1631d8e53,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4037596411263007239, guid: 5e64ecd9b46c5f346a311cd1631d8e53,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 198.856
-      objectReference: {fileID: 0}
-    - target: {fileID: 4037596411263007239, guid: 5e64ecd9b46c5f346a311cd1631d8e53,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4037596411263007239, guid: 5e64ecd9b46c5f346a311cd1631d8e53,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4037596411263007239, guid: 5e64ecd9b46c5f346a311cd1631d8e53,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4037596411263007239, guid: 5e64ecd9b46c5f346a311cd1631d8e53,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4037596411263007239, guid: 5e64ecd9b46c5f346a311cd1631d8e53,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4037596411263007239, guid: 5e64ecd9b46c5f346a311cd1631d8e53,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4037596411263007239, guid: 5e64ecd9b46c5f346a311cd1631d8e53,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8376074566871246905, guid: 5e64ecd9b46c5f346a311cd1631d8e53,
-        type: 3}
-      propertyPath: m_Name
-      value: Wood (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8376074566871246905, guid: 5e64ecd9b46c5f346a311cd1631d8e53,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5e64ecd9b46c5f346a311cd1631d8e53, type: 3}
 --- !u!4 &600759313 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 70e48ff3a61951645943f7e9273f4253,
@@ -8495,6 +8425,15 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0
       outWeight: 0
+    - serializedVersion: 3
+      time: 0.7795312
+      value: 0.45663
+      inSlope: 1.8397828
+      outSlope: 1.8397828
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.113931276
+      outWeight: 0.22891583
     - serializedVersion: 3
       time: 1
       value: 1
@@ -13205,7 +13144,7 @@ Transform:
   m_GameObject: {fileID: 1019994212}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.049987793, y: 4.9, z: -34.1}
+  m_LocalPosition: {x: 0.049987793, y: 7.5, z: -49.2}
   m_LocalScale: {x: 9, y: 9, z: 9}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32670,4 +32609,3 @@ SceneRoots:
   - {fileID: 1329373863}
   - {fileID: 3410669909668591133}
   - {fileID: 4397034701432529074}
-  - {fileID: 575693879}

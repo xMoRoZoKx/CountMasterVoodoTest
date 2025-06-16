@@ -6,19 +6,23 @@ public class EnemySpawner : MonoBehaviour
 {
     [Header("Настройки спавна")]
     public GameObject enemyPrefab;
+    public GameObject bossPrefab;
     public Transform spawnPoint;
     public float minSpawnInterval = 1f;
     public float maxSpawnInterval = 5f;
     public float spawnRangeX = 10f;
 
+    public int spawnBossEach = 3;
+
     [Header("Здоровье спавнера")]
     public int maxLives = 99;
     private int currentLives;
 
-    public TextMeshPro lifeText; // ссылка на child TextMeshPro "life"
-    public GameObject hitEffect; // эффект при попадании в спавнер
+    public TextMeshPro lifeText;
+    public GameObject hitEffect;
 
     private bool spawning = true;
+    private int spawnCount = 0; // счетчик спавнов
 
     private void Start()
     {
@@ -39,16 +43,41 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        if (!spawning || enemyPrefab == null || spawnPoint == null) return;
+        if (!spawning || spawnPoint == null) return;
 
-        // Центр спавна
-        Vector3 spawnPos = spawnPoint.position;
-        GameObject enemy = Instantiate(enemyPrefab, spawnPos, Quaternion.Euler(0, 180, 0));
+        spawnCount++;
 
-        // Запуск корутины перемещения на позицию
-        float targetX = spawnPoint.position.x + Random.Range(-spawnRangeX / 2f, spawnRangeX / 2f);
-        StartCoroutine(MoveEnemyToPosition(enemy.transform, targetX, 2f, 1f));
+        GameObject prefabToSpawn;
+        Vector3 spawnPos;
+
+        if (spawnCount % spawnBossEach == 0 && bossPrefab != null)
+        {
+            // Спавним босса по центру
+            prefabToSpawn = bossPrefab;
+            spawnPos = spawnPoint.position;
+        }
+        else if (enemyPrefab != null)
+        {
+            // Спавним обычного врага со смещением
+            prefabToSpawn = enemyPrefab;
+            float offsetX = Random.Range(-spawnRangeX / 2f, spawnRangeX / 2f);
+            spawnPos = spawnPoint.position + Vector3.right * offsetX;
+        }
+        else
+        {
+            return;
+        }
+
+        GameObject enemy = Instantiate(prefabToSpawn, spawnPos, Quaternion.Euler(0, 180, 0));
+
+        if (prefabToSpawn == enemyPrefab)
+        {
+            // Только обычных врагов двигаем к позиции
+            float targetX = spawnPoint.position.x + Random.Range(-spawnRangeX / 2f, spawnRangeX / 2f);
+            StartCoroutine(MoveEnemyToPosition(enemy.transform, targetX, 2f, 1f));
+        }
     }
+
     private IEnumerator MoveEnemyToPosition(Transform enemyTransform, float targetX, float delay, float duration)
     {
         yield return new WaitForSeconds(delay);
@@ -63,13 +92,12 @@ public class EnemySpawner : MonoBehaviour
             float newX = Mathf.Lerp(startX, targetX, t);
 
             Vector3 pos = enemyTransform.position;
-            pos.x = newX; // меняем только X, остальные остаются
+            pos.x = newX;
             enemyTransform.position = pos;
 
             yield return null;
         }
 
-        // Финальный снэп X
         if (enemyTransform != null)
         {
             Vector3 finalPos = enemyTransform.position;
@@ -77,7 +105,6 @@ public class EnemySpawner : MonoBehaviour
             enemyTransform.position = finalPos;
         }
     }
-
 
     public void TakeHit()
     {

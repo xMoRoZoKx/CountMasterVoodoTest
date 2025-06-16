@@ -37,7 +37,7 @@ public class ProjectileLogic : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             Debug.Log("KICK ENEMY");
-            WoodPartView enemy = other.GetComponent<WoodPartView>();
+            var enemy = other.GetComponent<EntityView>();
             if (enemy != null)
             {
                 Debug.Log("DAMAGE TO ENEMY:" + damage);
