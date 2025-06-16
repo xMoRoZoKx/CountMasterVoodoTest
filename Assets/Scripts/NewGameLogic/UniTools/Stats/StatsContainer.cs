@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Newtonsoft.Json;
 using UniTools;
 using UnityEngine;
 [System.Serializable]
@@ -19,8 +18,8 @@ public class StatsContainer
         this.stats = stats;
     }
 
-    [SerializeField, JsonProperty] private List<Stat> stats = new List<Stat>();
-    [JsonIgnore] public IEnumerable<Stat> Stats => stats;
+    [SerializeField] private List<Stat> stats = new List<Stat>();
+    public IEnumerable<Stat> Stats => stats;
 
     public static StatsContainer Calculate(StatsContainer stats1, StatsContainer stats2, Func<float, float, float> stat1_Stat2)
     {
