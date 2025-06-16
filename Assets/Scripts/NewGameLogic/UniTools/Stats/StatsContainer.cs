@@ -33,7 +33,7 @@ public class StatsContainer
             newStats.Add(new Stat()
             {
                 type = statType,
-                info = new StatInfo() { value = value }
+                info = new StatInfo() { value = value  }
             });
         });
         return new StatsContainer(newStats);
