@@ -965,7 +965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84f72ef73448bd498925fe52f239178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedToNextPoint: 50
+  speedToNextPoint: 130
 --- !u!23 &64560364
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1409,6 +1409,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a2cfe989164ca748bbcd923409d1943, type: 3}
+--- !u!4 &93353389 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4318837354439603, guid: 38c7884612776214897a053fcf984b78,
+    type: 3}
+  m_PrefabInstance: {fileID: 621294195}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &96664449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1849,7 +1855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84f72ef73448bd498925fe52f239178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedToNextPoint: 50
+  speedToNextPoint: 130
 --- !u!23 &145273972
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6275,7 +6281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84f72ef73448bd498925fe52f239178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedToNextPoint: 50
+  speedToNextPoint: 130
 --- !u!23 &458023768
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6514,7 +6520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84f72ef73448bd498925fe52f239178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedToNextPoint: 50
+  speedToNextPoint: 130
 --- !u!23 &466613459
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7734,7 +7740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84f72ef73448bd498925fe52f239178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedToNextPoint: 50
+  speedToNextPoint: 130
 --- !u!23 &570659390
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8185,6 +8191,64 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1934780857}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &621294195
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1063183700}
+    m_Modifications:
+    - target: {fileID: 1849247775254036, guid: 38c7884612776214897a053fcf984b78, type: 3}
+      propertyPath: m_Name
+      value: fx_water_ring
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318837354439603, guid: 38c7884612776214897a053fcf984b78, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318837354439603, guid: 38c7884612776214897a053fcf984b78, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318837354439603, guid: 38c7884612776214897a053fcf984b78, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318837354439603, guid: 38c7884612776214897a053fcf984b78, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318837354439603, guid: 38c7884612776214897a053fcf984b78, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318837354439603, guid: 38c7884612776214897a053fcf984b78, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318837354439603, guid: 38c7884612776214897a053fcf984b78, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318837354439603, guid: 38c7884612776214897a053fcf984b78, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318837354439603, guid: 38c7884612776214897a053fcf984b78, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318837354439603, guid: 38c7884612776214897a053fcf984b78, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 1933974408672101, guid: 38c7884612776214897a053fcf984b78, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 38c7884612776214897a053fcf984b78, type: 3}
 --- !u!4 &622509349 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1806304471465708005, guid: c579a2bf4b471f345b21938939a713a3,
@@ -8836,7 +8900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84f72ef73448bd498925fe52f239178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedToNextPoint: 50
+  speedToNextPoint: 130
 --- !u!23 &696856682
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11705,7 +11769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84f72ef73448bd498925fe52f239178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedToNextPoint: 50
+  speedToNextPoint: 130
 --- !u!23 &941287851
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13959,6 +14023,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 93353389}
   - {fileID: 456937773}
   - {fileID: 1536926055}
   - {fileID: 327278447}
@@ -14799,7 +14864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84f72ef73448bd498925fe52f239178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedToNextPoint: 50
+  speedToNextPoint: 130
 --- !u!23 &1152447416
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18254,7 +18319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84f72ef73448bd498925fe52f239178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedToNextPoint: 50
+  speedToNextPoint: 130
 --- !u!23 &1374176257
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20401,7 +20466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84f72ef73448bd498925fe52f239178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedToNextPoint: 50
+  speedToNextPoint: 130
 --- !u!23 &1485981973
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21360,7 +21425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84f72ef73448bd498925fe52f239178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedToNextPoint: 50
+  speedToNextPoint: 130
 --- !u!23 &1545076625
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21633,7 +21698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84f72ef73448bd498925fe52f239178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedToNextPoint: 50
+  speedToNextPoint: 130
 --- !u!23 &1547032786
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22453,7 +22518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84f72ef73448bd498925fe52f239178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedToNextPoint: 50
+  speedToNextPoint: 130
 --- !u!23 &1652314094
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22797,7 +22862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84f72ef73448bd498925fe52f239178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedToNextPoint: 50
+  speedToNextPoint: 130
 --- !u!23 &1670987746
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23452,7 +23517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84f72ef73448bd498925fe52f239178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedToNextPoint: 50
+  speedToNextPoint: 130
 --- !u!23 &1715379623
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26190,7 +26255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84f72ef73448bd498925fe52f239178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedToNextPoint: 50
+  speedToNextPoint: 130
 --- !u!23 &1889892010
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26293,7 +26358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84f72ef73448bd498925fe52f239178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedToNextPoint: 50
+  speedToNextPoint: 130
 --- !u!23 &1892378724
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26497,7 +26562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84f72ef73448bd498925fe52f239178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedToNextPoint: 50
+  speedToNextPoint: 130
 --- !u!23 &1910001664
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27890,7 +27955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84f72ef73448bd498925fe52f239178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedToNextPoint: 50
+  speedToNextPoint: 130
 --- !u!23 &2066082270
 MeshRenderer:
   m_ObjectHideFlags: 0

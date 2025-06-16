@@ -11534,6 +11534,9 @@ MonoBehaviour:
   physicsChance: 10
   parsContainer: {fileID: 950918498523865289}
   riderView: {fileID: 1255709642270493720}
+  waterFXRoot: {fileID: 3934884929501006117}
+  waterFXPrefab: {fileID: 4318837354439603, guid: 38c7884612776214897a053fcf984b78,
+    type: 3}
   OnDead:
     m_PersistentCalls:
       m_Calls:
@@ -32213,6 +32216,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1676228993534267102}
+  - {fileID: 3934884929501006117}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1506570201058250323
@@ -49919,6 +49923,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &6124630441649671370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3934884929501006117}
+  m_Layer: 0
+  m_Name: WaterFXRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3934884929501006117
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6124630441649671370}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4855221440265779517}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6126846544296825319
 GameObject:
   m_ObjectHideFlags: 0

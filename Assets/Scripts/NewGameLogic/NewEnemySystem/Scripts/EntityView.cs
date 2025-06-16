@@ -22,6 +22,7 @@ public class EntityView : ConnectableMonoBevaviour
     private CharacterController3Lane playerController;
     public Transform parsContainer;
     public Transform riderView;
+    public Transform waterFXRoot, waterFXPrefab;
 
     public UnityEvent OnDead;
 
@@ -94,6 +95,7 @@ public class EntityView : ConnectableMonoBevaviour
         if (riderView != null)
         {
             AddPhysicsComponent(riderView, radius, height, 0);
+            if (waterFXRoot != null && waterFXPrefab != null) Instantiate(waterFXPrefab, waterFXRoot);
         }
 
         if (parsContainer != null)

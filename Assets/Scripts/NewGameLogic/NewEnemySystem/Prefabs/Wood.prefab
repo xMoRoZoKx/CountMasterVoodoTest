@@ -13942,8 +13942,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   hitEffect: {fileID: 0}
+  physicsChance: 100
   parsContainer: {fileID: 5012940499855613472}
   riderView: {fileID: 0}
+  waterFXRoot: {fileID: 0}
+  waterFXPrefab: {fileID: 0}
   OnDead:
     m_PersistentCalls:
       m_Calls: []
@@ -16517,6 +16520,7 @@ Transform:
   m_Children:
   - {fileID: 8907437856193273177}
   - {fileID: 6196666486856999799}
+  - {fileID: 986899499892794505}
   m_Father: {fileID: 8129489082651891438}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2640181940443315379
@@ -16533,8 +16537,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   hitEffect: {fileID: 0}
+  physicsChance: 100
   parsContainer: {fileID: 6196666486856999799}
   riderView: {fileID: 8907437856193273177}
+  waterFXRoot: {fileID: 986899499892794505}
+  waterFXPrefab: {fileID: 4318837354439603, guid: 38c7884612776214897a053fcf984b78,
+    type: 3}
   OnDead:
     m_PersistentCalls:
       m_Calls: []
@@ -23828,8 +23836,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   hitEffect: {fileID: 0}
+  physicsChance: 100
   parsContainer: {fileID: 8869375502870920684}
   riderView: {fileID: 0}
+  waterFXRoot: {fileID: 0}
+  waterFXPrefab: {fileID: 0}
   OnDead:
     m_PersistentCalls:
       m_Calls: []
@@ -25685,6 +25696,7 @@ Transform:
   m_Children:
   - {fileID: 4390241975911044531}
   - {fileID: 4500870553883223324}
+  - {fileID: 1042467793044861400}
   m_Father: {fileID: 8129489082651891438}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &371794143355958387
@@ -25701,8 +25713,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   hitEffect: {fileID: 0}
+  physicsChance: 100
   parsContainer: {fileID: 4500870553883223324}
   riderView: {fileID: 4390241975911044531}
+  waterFXRoot: {fileID: 1042467793044861400}
+  waterFXPrefab: {fileID: 4318837354439603, guid: 38c7884612776214897a053fcf984b78,
+    type: 3}
   OnDead:
     m_PersistentCalls:
       m_Calls: []
@@ -25775,8 +25791,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   hitEffect: {fileID: 0}
+  physicsChance: 100
   parsContainer: {fileID: 4773960469323504988}
   riderView: {fileID: 0}
+  waterFXRoot: {fileID: 0}
+  waterFXPrefab: {fileID: 0}
   OnDead:
     m_PersistentCalls:
       m_Calls: []
@@ -31914,6 +31933,37 @@ Transform:
   - {fileID: 1795092359557807036}
   m_Father: {fileID: 1879248846341829830}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4081092849841344142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1939309466078743217}
+  m_Layer: 0
+  m_Name: WaterFXRoot (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1939309466078743217
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4081092849841344142}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.05, z: 0.483}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7249258345762700719}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4089246776326324762
 GameObject:
   m_ObjectHideFlags: 0
@@ -37225,6 +37275,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &4814650637304326653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1042467793044861400}
+  m_Layer: 0
+  m_Name: WaterFXRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1042467793044861400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4814650637304326653}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.05, z: 1.0309999}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1090906160609799599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4815524547420895918
 GameObject:
   m_ObjectHideFlags: 0
@@ -37273,8 +37354,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   hitEffect: {fileID: 0}
+  physicsChance: 100
   parsContainer: {fileID: 1996740410654337502}
   riderView: {fileID: 0}
+  waterFXRoot: {fileID: 0}
+  waterFXPrefab: {fileID: 0}
   OnDead:
     m_PersistentCalls:
       m_Calls: []
@@ -37430,8 +37514,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   hitEffect: {fileID: 0}
+  physicsChance: 100
   parsContainer: {fileID: 1377941295280528498}
   riderView: {fileID: 0}
+  waterFXRoot: {fileID: 0}
+  waterFXPrefab: {fileID: 0}
   OnDead:
     m_PersistentCalls:
       m_Calls: []
@@ -38666,8 +38753,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   hitEffect: {fileID: 0}
+  physicsChance: 100
   parsContainer: {fileID: 2820602814259517052}
   riderView: {fileID: 0}
+  waterFXRoot: {fileID: 0}
+  waterFXPrefab: {fileID: 0}
   OnDead:
     m_PersistentCalls:
       m_Calls: []
@@ -41878,8 +41968,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   hitEffect: {fileID: 0}
+  physicsChance: 100
   parsContainer: {fileID: 5951732779436594706}
   riderView: {fileID: 0}
+  waterFXRoot: {fileID: 0}
+  waterFXPrefab: {fileID: 0}
   OnDead:
     m_PersistentCalls:
       m_Calls: []
@@ -44691,8 +44784,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   hitEffect: {fileID: 0}
+  physicsChance: 100
   parsContainer: {fileID: 4913514020620830120}
   riderView: {fileID: 4390241975911044531}
+  waterFXRoot: {fileID: 0}
+  waterFXPrefab: {fileID: 0}
   OnDead:
     m_PersistentCalls:
       m_Calls: []
@@ -47336,8 +47432,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   hitEffect: {fileID: 0}
+  physicsChance: 100
   parsContainer: {fileID: 5233454212161082104}
   riderView: {fileID: 0}
+  waterFXRoot: {fileID: 0}
+  waterFXPrefab: {fileID: 0}
   OnDead:
     m_PersistentCalls:
       m_Calls: []
@@ -49935,6 +50034,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &6602949462024541772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 986899499892794505}
+  m_Layer: 0
+  m_Name: WaterFXRoot (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &986899499892794505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6602949462024541772}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.05, z: 0.159}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6313016959934604703}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6626842754113371314
 GameObject:
   m_ObjectHideFlags: 0
@@ -50549,6 +50679,7 @@ Transform:
   m_Children:
   - {fileID: 1885200507551320337}
   - {fileID: 461127333407702848}
+  - {fileID: 1939309466078743217}
   m_Father: {fileID: 8129489082651891438}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1457093276459990739
@@ -50565,8 +50696,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   hitEffect: {fileID: 0}
+  physicsChance: 100
   parsContainer: {fileID: 461127333407702848}
   riderView: {fileID: 1885200507551320337}
+  waterFXRoot: {fileID: 1939309466078743217}
+  waterFXPrefab: {fileID: 4318837354439603, guid: 38c7884612776214897a053fcf984b78,
+    type: 3}
   OnDead:
     m_PersistentCalls:
       m_Calls: []
@@ -55217,8 +55352,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   hitEffect: {fileID: 0}
+  physicsChance: 100
   parsContainer: {fileID: 802743283555685797}
   riderView: {fileID: 0}
+  waterFXRoot: {fileID: 0}
+  waterFXPrefab: {fileID: 0}
   OnDead:
     m_PersistentCalls:
       m_Calls: []
@@ -67057,8 +67195,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   hitEffect: {fileID: 0}
+  physicsChance: 100
   parsContainer: {fileID: 454529163051168527}
   riderView: {fileID: 0}
+  waterFXRoot: {fileID: 0}
+  waterFXPrefab: {fileID: 0}
   OnDead:
     m_PersistentCalls:
       m_Calls: []
@@ -67380,8 +67521,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   hitEffect: {fileID: 0}
+  physicsChance: 100
   parsContainer: {fileID: 6449560877566746043}
   riderView: {fileID: 0}
+  waterFXRoot: {fileID: 0}
+  waterFXPrefab: {fileID: 0}
   OnDead:
     m_PersistentCalls:
       m_Calls: []
