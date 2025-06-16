@@ -33,6 +33,7 @@ public class EnemySpawner : MonoBehaviour
 
     private IEnumerator SpawnLoop()
     {
+        yield return new WaitForSeconds(2);
         while (spawning)
         {
             SpawnEnemy();
