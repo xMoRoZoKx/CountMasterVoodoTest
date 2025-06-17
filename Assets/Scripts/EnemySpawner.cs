@@ -69,7 +69,7 @@ public class EnemySpawner : MonoBehaviour
             return;
         }
 
-        GameObject enemy = Instantiate(prefabToSpawn, spawnPos, Quaternion.Euler(0, 180, 0));
+        GameObject enemy = Instantiate(prefabToSpawn, spawnPoint.transform.position, Quaternion.Euler(0, 180, 0));
 
         if (prefabToSpawn == enemyPrefab)
         {
