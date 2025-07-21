@@ -24,7 +24,6 @@ Material:
     RenderType: Opaque
   disabledShaderPasses:
   - GRABPASS
-  - SHADOWCASTER
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
