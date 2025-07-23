@@ -15,6 +15,6 @@ MonoBehaviour:
   cooldown: 0.5
   projectileSpeed: 100
   projectileRange: 200
-  damage: 100
+  damage: 200
   shootEffect: {fileID: 1106839927264421, guid: 610454da54ff82e40a75a3d0ee195d51,
     type: 3}

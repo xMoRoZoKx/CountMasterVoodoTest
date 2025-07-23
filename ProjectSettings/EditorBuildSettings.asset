@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Demo/backups/voodoo_v3.unity
     guid: 86c602844ccd0034890778f5edbe558f
+  - enabled: 1
+    path: Assets/Demo/backups/Scene 30.unity
+    guid: f627b317d54db1d4681a8c0e0289b75c
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: b372d93c94096f5408f8c1ee9a2b6f23,
       type: 2}
