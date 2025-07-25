@@ -71,8 +71,8 @@ MonoBehaviour:
     overrideState: 0
     value: 1
   temperature:
-    overrideState: 0
-    value: 10
+    overrideState: 1
+    value: 27.1
   tint:
     overrideState: 0
     value: 10
@@ -1375,7 +1375,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 1.5
+    value: 3
   threshold:
     overrideState: 1
     value: 1.54
@@ -1462,7 +1462,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 1.8
+    value: 1.74
   color:
     overrideState: 1
     value: {r: 0.22454612, g: 0.38585797, b: 0.5471698, a: 1}
@@ -1480,7 +1480,7 @@ MonoBehaviour:
     value: -12
   thicknessModifier:
     overrideState: 1
-    value: 1.22
+    value: 2.68
   zBias:
     overrideState: 0
     value: 0.0001
@@ -1511,10 +1511,10 @@ MonoBehaviour:
     value: 1
   shutterAngle:
     overrideState: 1
-    value: 270
+    value: 360
   sampleCount:
     overrideState: 1
-    value: 10
+    value: 20
 --- !u!114 &8972619975983192530
 MonoBehaviour:
   m_ObjectHideFlags: 3

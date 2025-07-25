@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9861f36ca5d16a34cb47ae4a87941e89, type: 3}
   m_Name: 01_CannonSimple
   m_EditorClassIdentifier: 
-  cooldown: 0.15
-  projectileSpeed: 4
+  cooldown: 0.01
+  projectileSpeed: 0.001
   projectileRange: 80
   damage: 10
   shootEffect: {fileID: 1119687797106572, guid: 5da8362ada7228046b2633401fa325b8,
